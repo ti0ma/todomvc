@@ -1,6 +1,21 @@
 {
   "name": "todos",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ti0ma/todomvc.git"
+  },
+  "keywords": [
+    "challenge",
+    "css",
+    "grid"
+  ],
+  "author": "ti0ma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ti0ma/todomvc/issues"
+  },
+  "homepage": "https://github.com/ti0ma/todomvc#readme",
   "devDependencies": {
     "react-scripts": "1.1.1"
   },
