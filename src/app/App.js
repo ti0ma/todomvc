@@ -12,27 +12,27 @@ class App extends React.Component {
 
   addTodo = (task) => {
     const todos = this.state.todos;
-    todos.push({
+    const newTask = {
       completed: false,
       task
-    });
-    this.setState({ todos });
+    };
+    this.setState({ todos: todos.concat(newTask) });
   }
 
   updateTodo = (index, task) => {
-    const todos = this.state.todos;
+    const todos = [...this.state.todos];
     todos[index].task = task;
     this.setState({ todos });
   }
 
   toggleTodo = (index) => {
-    const todos = this.state.todos;
+    const todos = [...this.state.todos];
     todos[index].completed = !todos[index].completed;
     this.setState({ todos });
   }
 
   removeTodo = (index) => {
-    const todos = this.state.todos;
+    const todos = [...this.state.todos];
     todos.splice(index, 1);
     this.setState({ todos });
   }
